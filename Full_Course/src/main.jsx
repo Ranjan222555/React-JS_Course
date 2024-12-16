@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App.jsx";
 import Globalstate from "./context/index.jsx";
 import { BrowserRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClint = new QueryClient();
 
 createRoot(document.getElementById("root")).render(
   // <App />
@@ -13,8 +16,10 @@ createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
   //     <App/>
   // </React.StrictMode>
-  
+
   <BrowserRouter>
-    <App />
+    <QueryClientProvider client={queryClint}>
+      <App />
+    </QueryClientProvider>
   </BrowserRouter>
 );

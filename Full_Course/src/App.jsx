@@ -30,6 +30,7 @@ import Hookform from "./Router&C-Hooks/Hooks/hook-Form";
 import UseRefHook from "./Router&C-Hooks/Hooks/Hook-UseRef-Memo-Callback/Use-Ref-Example";
 import UseMemoHooks from "./Router&C-Hooks/Hooks/Hook-UseRef-Memo-Callback/Use-Memo-Example";
 import UseCallbackHooks from "./Router&C-Hooks/Hooks/Hook-UseRef-Memo-Callback/Use-Callback-Example";
+import ReactQueryExample from "./Router&C-Hooks/React query/React-Query";
 
 // let dummyproduct = ["product 1", "product 2", "product 3"];
 
@@ -73,6 +74,10 @@ function CustomRoutes() {
     {
       path: "usecallback",
       element: <UseCallbackHooks />,
+    },
+    {
+      path: "reactQuery",
+      element: <ReactQueryExample/>
     },
   ]);
   return element;
