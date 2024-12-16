@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Globalcontext } from "../../context";
+import { Globalcontext } from "..";
 
 function Textofcontext() {
   const { buttonchange } = useContext(Globalcontext);
