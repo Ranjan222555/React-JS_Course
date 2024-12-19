@@ -110,8 +110,8 @@ function App() {
         <button onClick={() => nanigate("/home/Recipe")}>Recipe</button>{" "}
         <button onClick={() => nanigate("/home/comment")}>Comment</button>
         <Link to={"/home/Recipe"}>Another way to navigate</Link>{" "}
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <Routes>
           <Route path="/Home" element={<Layout />}>
             <Route path="Recipe" element={<RecipeList />} />
