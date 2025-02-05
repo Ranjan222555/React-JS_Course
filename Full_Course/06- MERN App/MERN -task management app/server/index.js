@@ -3,13 +3,14 @@ const cors = require("cors");
 const cookieparser = require("cookie-parser");
 const userRouter = require("./routes/user-routes");
 const taskRouter = require("./routes/Task-routes");
+require("dotenv").config();
 
 require("./DataBase/DataBase");
 const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: process.env.ORIGIN_URL,
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
